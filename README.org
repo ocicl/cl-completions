@@ -1,0 +1,9 @@
+* cl-completions
+
+A Common Lisp LLM completions library
+
+|---------+---------------------------------------------------|
+| source  | git:https://github.com/atgreen/cl-completions.git |
+| commit  | 1a7266a                                           |
+| systems | completions                                       |
+|---------+---------------------------------------------------|
