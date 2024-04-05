@@ -4,6 +4,6 @@ A Common Lisp LLM completions library
 
 |---------+---------------------------------------------------|
 | source  | git:https://github.com/atgreen/cl-completions.git |
-| commit  | 7932a81                                           |
+| commit  | 93001d3                                           |
 | systems | completions                                       |
 |---------+---------------------------------------------------|
