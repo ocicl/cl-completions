@@ -1,0 +1,23 @@
+name: Update README Hash
+
+on:
+  schedule:
+    # Runs every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Update commit hash
+        uses: ocicl/ocicl-action/update-check@main
+        with:
+          upstream-repo: 'https://github.com/atgreen/cl-completions.git'
+          readme-path: 'README.org'
