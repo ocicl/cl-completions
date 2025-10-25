@@ -1,9 +1,9 @@
-| commit  | c8fb05a* cl-completions
-| commit  | c8fb05a
-| commit  | c8fb05aA Common Lisp LLM completions library
-| commit  | c8fb05a
-| commit  | c8fb05a|---------+---------------------------------------------------|
-| commit  | c8fb05a| source  | git:https://github.com/atgreen/cl-completions.git |
-| commit  | c8fb05a| commit  | c8fb05a                                           |
-| commit  | c8fb05a| systems | completions                                       |
-| commit  | c8fb05a|---------+---------------------------------------------------|
+* cl-completions
+
+A Common Lisp LLM completions library
+
+|---------+---------------------------------------------------|
+| source  | git:https://github.com/atgreen/cl-completions.git |
+| commit  | c8fb05a                                           |
+| systems | completions                                       |
+|---------+---------------------------------------------------|
