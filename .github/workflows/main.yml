@@ -18,12 +18,11 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Check for upstream updates
+        id: update-check
         uses: ocicl/ocicl-action/update-check@main
-        with:
-          upstream-repo: 'https://github.com/atgreen/cl-completions.git'
-          readme-path: 'README.org'
 
       - id: build-and-publish
+        if: steps.update-check.outputs.updated == 'true' || github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         uses: ocicl/ocicl-action@main
         with:
           gpg_signing_key: ${{ secrets.GPG_SIGNING_KEY }}
